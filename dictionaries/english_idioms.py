@@ -16,8 +16,10 @@ idioms = {
 
 for (key, value) in idioms.items():
     # Have to use join on the values only first
-    # so declare
+    # so define a variable for what you want to use in the concatenation
     s = " "
+    # then define a variable to use the join method on the values
     value_strings = s.join(value)
+    # lastly print the key, value pairs using the join variable for the values
     print (f'{key}: {value_strings}')
 
