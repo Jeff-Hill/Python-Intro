@@ -17,3 +17,13 @@ for i in range(1, 101):
     else:
         print (i)
 # To determine if a number can be evenly divided by 5 or 7, use the Python modulo operator.
+
+
+for i in range(1,  100):
+    output = ""
+    if (i % 5 == 0):
+        output = f'{output}Chicken'
+    if (i % 7 == 0):
+        output = f'{output}Monkey'
+
+    print(output if output != "" else i)
