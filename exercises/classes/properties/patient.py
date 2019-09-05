@@ -57,7 +57,7 @@ print(Jeff)
 # Jeff.address = "123 Maint St."
 print(Jeff.social_security)
 # print(Jeff.first_name)
-print(Jeff.full_name)
+print("full name", Jeff.full_name)
 print(Jeff.address)
 Jeff.address = "123 Maint St."
 print(Jeff.address)
