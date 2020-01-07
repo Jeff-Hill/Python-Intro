@@ -19,6 +19,7 @@ my_new_list = list(["what"])
 my_new_list = list("what")
 print(my_list)
 
+
 # Dictionary
 
 my_pairs = {
@@ -31,18 +32,18 @@ name = my_pairs["name"]
 print(name)
 
 my_pairs["last"] = "Jones"
-print(my_pairs)
+print("Line 35", my_pairs)
 my_pairs["address"] = {"street": "123 Sesame Street", "zip": 40503}
-print(my_pairs)
-print(my_pairs["address"]["zip"])
-print("items", my_pairs.items())
-print("values", my_pairs.values())
+print("Line 37", my_pairs)
+print("Line 38", my_pairs["address"]["zip"])
+print("Line 39 items", my_pairs.items())
+print("Line 40 values", my_pairs.values())
 
 for foo in my_pairs.values():
-    print(foo)
+    print("Line 43", foo)
 
 for foo in my_pairs.items():
-    print(foo)
+    print("Line 46", foo)
 
 for key,value in my_pairs.items():
     print(f"This came from my_pairs: {value}")
@@ -52,20 +53,20 @@ print(f'Hello, my name is {my_pairs["name"]}')
 # Sets
 
 my_set = {"fred", 3, 12, True, "Jones", 3}
-print("set", my_set)
+print("Line 56 set", my_set)
 
 my_dupes = [1,2,3,4,5,1]
 my_dupes = set(my_dupes)
-print(list(my_dupes))
+print("Line 60", list(my_dupes))
 
 my_set.add("hello C33")
-print(my_set)
-print(set(my_pairs))
+print("Line 63", my_set)
+print("Line 64", set(my_pairs))
 
 # Tuples
 
 my_tup = ("1", 1, 3, "hello", True, 3)
-print(my_tup)
+print("Line 69", my_tup)
 my_tup.count(3)
 print(my_tup.count(3))
 print(my_tup.index("hello"))
@@ -110,9 +111,9 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
     raise ValueError('number too large')
 
 if __name__ == '__main__':
-    print(approximate_size(16384, False))
-    print(approximate_size(size=16384, a_kilobyte_is_1024_bytes=False))
-    print(approximate_size(-16384))
+    print("Line 114", approximate_size(16384, False))
+    print("Line 115", approximate_size(size=16384, a_kilobyte_is_1024_bytes=False))
+    print("Line 116", approximate_size(-16384))
 
 
 
